@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Double</title>
+</head>
+<body>
+    Enter List:<input type="text" id="list"><br><br>
+    Output:<input type="text" id="Output"><br><br>
+    <button onclick="doublelist()">Double</button>
+
+    <script>
+        function double(n){
+            return n*2
+        }
+
+        function doublelist(){
+            var a = document.querySelector('#list').value 
+            var arr = a.split(" ")
+            Output.value = arr.map(double)
+        }
+
+    </script>
+</body>
+</html>

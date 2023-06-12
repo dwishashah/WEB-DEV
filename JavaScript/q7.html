@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mult</title>
+</head>
+<body>
+    <table border style="border-collapse: collapse;">
+        <tr>
+            <td>
+                Enter Number:<input type="text" id="num"><br><br>
+                Enter length:<input type="text" id="len"><br><br>
+                Output:<input type="text" id="Output"><br><br>
+                <button onclick="ans()">Ans</button>
+            </td>
+        </tr>
+    </table>
+    <script>
+        function ans(){
+            var n = document.querySelector('#num').value 
+            var l = document.querySelector('#len').value 
+            var arr = []
+            for(let i=1;i<=l;i++){
+                arr[i-1] = n*i
+            }
+            Output.value = arr
+        }
+
+    </script>
+
+</body>
+</html>
